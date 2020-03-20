@@ -21,8 +21,6 @@
     <tr>
       <th>URL</th>
       <th>Slug</th>
-
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -30,11 +28,6 @@
     <tr>
       <td><%= shorten_url(link.url) %></td>
       <td><%= link Routes.link_url(@conn, :index)<>link.slug, to: Routes.link_path(@conn, :show, link.slug) %></td>
-
-      <%# <td>
-        <span><%= link "Show", to: Routes.link_path(@conn, :show, link) %>
-        <%# <span><%= link "Delete", to: Routes.link_path(@conn, :delete, link), method: :delete, data: [confirm: "Are you sure?"] %></span>
-      <%# </td> %>
     </tr>
 <% end %>
   </tbody>

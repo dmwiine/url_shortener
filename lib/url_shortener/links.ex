@@ -56,40 +56,6 @@ defmodule UrlShortener.Links do
   end
 
   @doc """
-  Updates a link.
-
-  ## Examples
-
-      iex> update_link(link, %{field: new_value})
-      {:ok, %Link{}}
-
-      iex> update_link(link, %{field: bad_value})
-      {:error, %Ecto.Changeset{}}
-
-  """
-  # def update_link(%Link{} = link, attrs) do
-  #   link
-  #   |> Link.changeset(attrs)
-  #   |> Repo.update()
-  # end
-
-  @doc """
-  Deletes a link.
-
-  ## Examples
-
-      iex> delete_link(link)
-      {:ok, %Link{}}
-
-      iex> delete_link(link)
-      {:error, %Ecto.Changeset{}}
-
-  """
-  # def delete_link(%Link{} = link) do
-  #   Repo.delete(link)
-  # end
-
-  @doc """
   Returns an `%Ecto.Changeset{}` for tracking link changes.
 
   ## Examples
